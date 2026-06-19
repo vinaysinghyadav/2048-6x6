@@ -1,4 +1,4 @@
-const SIZE = 6;
+const SIZE = 4;
 let board, score, best;
 
 const boardEl = document.getElementById('board');
