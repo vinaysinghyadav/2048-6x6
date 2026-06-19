@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048 — 6x6</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2048 <span>6×6</span></h1>
+      <div class="scores">
+        <div class="score-box">
+          <div class="score-label">SCORE</div>
+          <div class="score-value" id="score">0</div>
+        </div>
+        <div class="score-box">
+          <div class="score-label">BEST</div>
+          <div class="score-value" id="best">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <p>Use arrow keys to play. Merge tiles to survive!</p>
+      <button id="new-game">New Game</button>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="game-over" id="game-over">
+      <div class="game-over-content">
+        <h2>Game Over!</h2>
+        <p>Score: <span id="final-score">0</span></p>
+        <button id="restart">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
